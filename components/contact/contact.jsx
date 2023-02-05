@@ -3,6 +3,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { BsWhatsapp } from 'react-icons/bs'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Link from 'next/link';
 
 export default function Contact() {
 
@@ -30,14 +31,14 @@ export default function Contact() {
             <AiOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>janeliangbc@gmail.com</h5>
-            <a href='mailto:janeliangbc@gmail.com' target="_blank"> Send a message</a>
+            <Link href='mailto:janeliangbc@gmail.com' target="_blank"> Send a message</Link>
           </article>
 
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>778-708-5905</h5>
-            <a href='https://api.whatsapp.com/send?phone=7787085905' target="_blank"> Send a message</a>
+            <Link href='https://api.whatsapp.com/send?phone=7787085905' target="_blank"> Send a message</Link>
           </article>
 
         </div>

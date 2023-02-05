@@ -13,7 +13,10 @@ export default function Header() {
     <p className="section__subtitle section__subtitle--intro">
         Full-Stack Web Developer
     </p>
-    <img
+    <Image
+      width={200}
+      height={200}
+      style={{ width: "100%", height: "auto"}}
       className="intro__img"
       src="/me.jpeg"
       alt="a picture of Jane smiling"

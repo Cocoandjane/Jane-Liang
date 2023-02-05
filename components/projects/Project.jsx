@@ -51,10 +51,10 @@ export default function Project({ project }) {
             </div>
 
             <div className='code_website'>
-                <Link href={project.github} target="_blank" rel="noreferrer" className="project__link">
+                <Link href={project.github} target="_blank" className="project__link">
                     See Code: <AiOutlineGithub />
                 </Link>
-                <Link href={project.live} target="_blank" rel="noreferrer" className="project__link">
+                <Link href={project.live} target="_blank"  className="project__link">
                     See Website: <RiExternalLinkLine />
                 </Link>
             </div>

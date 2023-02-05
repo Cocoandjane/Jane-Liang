@@ -2,7 +2,6 @@ import { Head, Nav, CTA, Header, About, Contact, Services, Projects, Footer} fro
 
 
 export default function Home({projects}) {
-  console.log(projects)
 
   return (
     <>
