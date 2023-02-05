@@ -13,7 +13,7 @@
           {
             "id": 2,
             "title": "MoodJorts",
-            "image": "/project-imgs/MoodJorts.png",
+            "image": "/project-imgs/moodJorts.png",
             "github": "https://github.com/Cocoandjane/moodjorts",
             "live": "https://moodjorts-jane.herokuapp.com/",
             "stack": ["HTML/CSS"," Node.js", "Express", "LocalStorage"],
