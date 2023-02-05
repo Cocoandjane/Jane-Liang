@@ -1,0 +1,78 @@
+{
+    "projects" :[
+        {
+            "id": 1,
+            "title": "vanMarket",
+            "image": "/project-imgs/van.png",
+            "github": "https://github.com/Cocoandjane/van_market_idsp",
+            "live": "https://vanmarket.herokuapp.com/",
+            "stack": ["HTML/CSS"," Node.js", "Express", "MySQL"],
+            "tools": ["Socket.io", "Git", "Heroku", "AWS/S3","AJAX", "Axios", "DOM"],
+            "description": "A full stack web application that allows users to buy and sell items locally. Users can create an account, post items for sale, and chat with other users. Built with React, Node.js, Express, and MongoDB."
+          },
+          {
+            "id": 2,
+            "title": "MoodJorts",
+            "image": "/project-imgs/MoodJorts.png",
+            "github": "https://github.com/Cocoandjane/moodjorts",
+            "live": "https://moodjorts-jane.herokuapp.com/",
+            "stack": ["HTML/CSS"," Node.js", "Express", "LocalStorage"],
+            "tools": ["DOM", "In Memory Array"],
+            "description":"An image saving app with user-friendly features such as the ability to add, delete, resize, and rearrange images, as well as the option to undo and redo actions using DOM manipulation. The app uses an in-memory array to store actions for the undo and redo feature, providing a seamless user experience. All saved data is securely stored in local storage for easy access and retrieval."
+            
+          },
+          {
+            "id": 3,
+            "title": "ChatMe",
+            "image": "/project-imgs/chat.png",
+            "github": "https://github.com",
+            "live": "https://github.com/Cocoandjane/chat-app-jane",
+            "stack": ["Next Js", "Tailwind", "Firebase", "Firestore"],
+            "tools": ["antd", "Axios", "AJAX", "Emoji JS"],
+            "description":"A next.js based chatting app that uses tailwind for styling and Firebase for authentication and database management. Firestore is used to store images, and Emoji.js is used to enable the use of emojis in the chat. Users can easily search for new chats, open or close existing chats, and edit or delete their own messages."
+          },
+          {
+            "id": 4,
+            "title": "Ecommerce",
+            "image": "/project-imgs/ecommerce.png",
+            "github": "https://github.com/Cocoandjane/Ecommerce-prac",
+            "live": "https://ecommerce-prac.vercel.app/",
+            "stack": [ "Next Js", "CSS", "Sainity JS"],
+            "tools": ["Canvas-confetti", "Axios", "AJAX", "API","Stripe"],
+            "description":"A practice Ecommerce site that uses Next.js for the front end and Sanity.io for the backend. The site uses Stripe for payment processing and Canvas-confetti for the confetti animation."
+          },
+          {
+            "id": 5,
+            "title": "Like-Comments-App",
+            "image": "/project-imgs/post_comments_likes.jpg",
+            "github":"'https://github.com/sam-meech-ward-bcit/code-examples-Cocoandjane",
+            "live": "https://code-examples-cocoandjane.vercel.app/",
+            "stack": ["Next Js", "Tailwind", "PostgreSQL"],
+            "tools": ["Prisma", "Next Auth", "API","AJAX"],
+            "description":"A Next.js based app that uses Tailwind for styling and PostgreSQL for database management. Prisma is used to manage the database, and Next Auth is used for authentication. Users can create an account, post comments, and like or dislike other users' comments."
+          },
+          {
+            "id": 6,
+            "title": "Mimimul_API_Todo",
+            "image": "/project-imgs/minimalAPI.png",
+            "github": "https://github.com/Cocoandjane/minimalAPI-todo",
+            "live": "https://best-todo.up.railway.app/",
+            "stack": ["React", "Tailwind", "In-memmory Database", "Minimal API",  "ASP.NET"],
+            "tools": ["Axios","Vite", "Code First", "Data migration", "AJAX", "Docker"],
+            "description": "A ASP.NET todo app that uses minimal API to create a RESTful API and used in-memmory database to store the data. The app uses axios to make requests to the API and tailwind for styling. Front end is built with React and Vite."
+
+         },
+         {
+            "id":7,
+            "title": "SwaggerAPI",
+            "image": "/project-imgs/swaggerAPI.png",
+            "github": "https://github.com/sam-meech-ward-bcit/week3-Cocoandjane",
+            "live": "https://dotnet-api-mood.up.railway.app/",
+            "stack":  ["React","Vite", "Tailwind", "PostgreSQL", "Minimal API", "Axios", "ASP.NET"],
+            "tools": ["Axios","Vite", "Code First", "Data migration", "AJAX", "Docker"],
+            "description": "A mood tracking app that allows you to keep track of your emotional well-being. The app uses ASP.NET to create a RESTful API and PostgreSQL to store the data. The app uses axios to make requests to the API and tailwind for styling. Front end is built with React and Vite."
+         }
+      
+         
+    ]
+}
