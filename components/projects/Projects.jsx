@@ -6,9 +6,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 export default function Projects({ projects }) {
 
-
- 
-
   return (
     <section id="projects" >
       <h5>My Recent Work</h5>
@@ -26,8 +23,8 @@ export default function Projects({ projects }) {
                   src={project.image} />
                 <h3>{project.title}</h3>
                 <div className="portfolio__item-cta">
-                  <Link href={project.github.slice(1, -1)} target="_blank"><AiOutlineGithub /></Link>
-                  <Link href={project.live.slice(1, -1)} target="_blank"><RiExternalLinkLine /></Link>
+                  <Link href={project.github} target="_blank"><AiOutlineGithub /></Link>
+                  <Link href={project.live} target="_blank"><RiExternalLinkLine /></Link>
                   <Link href={`/projects/${project.id}`}><TbListDetails /></Link>
                   {/* <Link
                     href={{
