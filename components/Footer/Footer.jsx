@@ -1,30 +1,31 @@
 import React from 'react'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
+import Link from 'next/link'
 export default function Footer() {
     return (
         <div className='footer'>
             <ul className='footer__container '>
                 <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
 
                 </li>
                 <li>
-                    <a href="/#about">About</a>
+                    <Link href="/#about">About</Link>
                 </li>
                 <li>
-                    <a href="/#skills">Skills</a>
+                    <Link href="/#skills">Skills</Link>
                 </li>
                 <li>
-                    <a href="/#projects">Projects</a>
+                    <Link href="/#projects">Projects</Link>
                 </li>
                 <li>
-                    <a href="/#contact">Contact</a>
+                    <Link href="/#contact">Contact</Link>
                 </li>
             </ul>
             <div className='footer__socials'>
-                <a href="https://linkedin.com/in/janiejane" target="blank"><BsLinkedin /></a>
-                <a href="https://github.com/Cocoandjane" target="blank"><BsGithub /></a>
+                <Link href="https://linkedin.com/in/janiejane" target="blank"><BsLinkedin /></Link>
+                <Link href="https://github.com/Cocoandjane" target="blank"><BsGithub /></Link>
             </div>
 
         </div>

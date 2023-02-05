@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Nav() {
   function toggleMenu() {
@@ -21,36 +22,34 @@ export default function Nav() {
     <header>
     <nav className="navbar">
       <div id="logo" className="logo">
-        <a href="/">
+        <Link href="/">
     <Image 
       src="/coco1.svg"
       alt="logo"
       width={100}
       height={100}
     />
-    </a>
+    </Link>
   </div>
-
-      
       <ul className="nav__list">
         <li className="nav__item">
-          <a href="/" className="nav__link">Home</a>
+          <Link href="/" className="nav__link">Home</Link>
         </li>
 
         <li className="nav__item" onClick={closeMenu}>
-          <a href="/#about" className="nav__link">About</a>
+          <Link href="/#about" className="nav__link">About</Link>
         </li>
 
         <li className="nav__item">
-          <a href="/#skills" className="nav__link"  onClick={closeMenu}>Skills</a>
+          <Link href="/#skills" className="nav__link"  onClick={closeMenu}>Skills</Link>
         </li>
 
         <li className="nav__item">
-          <a href="/#projects" className="nav__link"  onClick={closeMenu}>Projects</a>
+          <Link href="/#projects" className="nav__link"  onClick={closeMenu}>Projects</Link>
         </li>
 
         <li className="nav__item">
-          <a href="/#contact" className="nav__link"  onClick={closeMenu}>Contact</a>
+          <Link href="/#contact" className="nav__link"  onClick={closeMenu}>Contact</Link>
         </li>
 
       </ul>
