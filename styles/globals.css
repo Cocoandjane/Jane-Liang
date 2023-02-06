@@ -628,6 +628,7 @@ textarea {
 
 
 /* ===id page===== */
+
 .id_header {
   padding: 2rem;
 }
@@ -688,4 +689,17 @@ section#project-detail {
 .portfolio__item_id:hover {
   border-color: var(--clr-dark);
   background: transparent;
+} 
+
+@media screen and (max-width: 600px) {
+  .portfolio__item_id {
+    width: 90%;
+    margin-top: -2rem;
+  }
+  section#project-detail{
+    padding: 0;
+    font-size: medium;
+  }
+
+
 }

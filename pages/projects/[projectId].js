@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav ,Header,SingleProject, Footer} from '../../components'
+import {Nav,SingleProject, Footer} from '../../components'
 
 export default function Project( {project}) {
 

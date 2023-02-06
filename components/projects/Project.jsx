@@ -7,9 +7,10 @@ import Link from 'next/link'
 export default function Project({ project }) {
 
     return (
+        <>
         <section id="project-detail" className="my-project">
-
-            <h2> {project.title}</h2>
+            <h2 > {project.title}</h2>
+            
             <article className="portfolio__item_id">
                 <div className="portfolio__item-image_id">
                     <Image
@@ -24,6 +25,8 @@ export default function Project({ project }) {
                     </div>
                 </div>
             </article>
+       
+         
             <div className='details_id_page'>
                 <h4>Stack :</h4>
                 <div className='stack_list'>
@@ -58,6 +61,8 @@ export default function Project({ project }) {
                     See Website: <RiExternalLinkLine />
                 </Link>
             </div>
+          
         </section>
+        </>
     )
 }
