@@ -22,8 +22,8 @@ export default function Projects({ projects }) {
                   src={project.image} />
                 <h3>{project.title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={project.github} target="_blank"><AiOutlineGithub /></a>
-                  <a href={project.live} target="_blank"><RiExternalLinkLine /></a>
+                  <a href={project.github}><AiOutlineGithub /></a>
+                  <a href={project.live}><RiExternalLinkLine /></a>
                   <a href={`/projects/${project.id}`}><TbListDetails /></a>
                   {/* <Link
                     href={{
