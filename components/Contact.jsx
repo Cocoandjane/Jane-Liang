@@ -42,12 +42,12 @@ export default function Contact() {
           </article> */}
 
         </div>
-        {/* <form ref={formRef} onSubmit={sendEmail}>
+        <form ref={formRef} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder='Your full name' required />
           <input type="email" name="email" placeholder="Your email" required />
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
           <button type="submit" className='btn btn-primary'>Send Message</button>
-        </form> */}
+        </form>
       </div>
 
     </section>
