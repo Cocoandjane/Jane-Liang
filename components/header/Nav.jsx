@@ -21,6 +21,7 @@ export default function Nav() {
     function scrollFunction() {
       // or page is on mobile view
       if (window.innerWidth <= 768) {
+        document.querySelector('.hamburger').style.display = 'block';
         return;
       } else {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -33,7 +34,6 @@ export default function Nav() {
       }
     }
     window.addEventListener("scroll", scrollFunction);
-
     return function unMount() {
       window.addEventListener("scroll", scrollFunction);
     };
