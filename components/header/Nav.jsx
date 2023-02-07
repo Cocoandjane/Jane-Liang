@@ -17,27 +17,26 @@ export default function Nav() {
     menuToggle.classList.remove('active');
     navigation.classList.remove('active');
   }
-  // useEffect(function mount() {
-  //   function scrollFunction() {
-  //     // or page is on mobile view
-  //     if (window.innerWidth <= 768) {
-  //       document.querySelector('.hamburger').style.display = 'block';
+  useEffect(function mount() {
+    function scrollFunction() {
+      if (window.innerWidth <= 768) {
+        document.querySelector('.hamburger').style.display = 'block';
      
-  //     }  else {
-  //       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-  //         document.querySelector('.hamburger').style.display = 'block';
-  //         document.querySelector('.nav__list').classList.add('hamburger--scroll');
-  //       } else {
-  //         document.querySelector('.hamburger').style.display = 'none';
-  //         document.querySelector('.nav__list').classList.remove('hamburger--scroll');
-  //       }
-  //     }  
-  //   }
-  //   window.addEventListener("scroll", scrollFunction);
-  //   return function unMount() {
-  //     window.addEventListener("scroll", scrollFunction);
-  //   };
-  //},[]);
+      }  else {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.querySelector('.hamburger').style.display = 'block';
+          document.querySelector('.nav__list').classList.add('hamburger--scroll');
+        } else {
+          document.querySelector('.hamburger').style.display = 'none';
+          document.querySelector('.nav__list').classList.remove('hamburger--scroll');
+        }
+      }  
+    }
+    window.addEventListener("scroll", scrollFunction);
+    return function unMount() {
+      window.addEventListener("scroll", scrollFunction);
+    };
+  },[]);
 
   useEffect(function mount() {
     function resizeFunction() {
@@ -54,7 +53,6 @@ export default function Nav() {
       window.addEventListener("resize", resizeFunction);
     };
   },[]);
-
 
   const router = useRouter();
   function clickLogo() {
