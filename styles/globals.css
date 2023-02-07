@@ -302,7 +302,7 @@ li {
     text-align: center;
     width: 100%;
     left: 0px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--ff-secondary);
     color: var(--clr-accent-dark);
   }
   * {
