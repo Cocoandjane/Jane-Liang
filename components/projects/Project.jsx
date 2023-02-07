@@ -9,8 +9,7 @@ export default function Project({ project }) {
     return (
         <>
         <section id="project-detail" className="my-project">
-            <h2 > {project.title}</h2>
-            
+            <h2 id='project_title_id'> {project.title}</h2>
             <article className="portfolio__item_id">
                 <div className="portfolio__item-image_id">
                     <Image

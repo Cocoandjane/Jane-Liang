@@ -141,7 +141,7 @@ section>h5 {
 
 section>h2 {
   color: var(--clr-accent-three);
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -745,6 +745,7 @@ section#project-detail {
   background: transparent;
 } 
 
+
 @media screen and (max-width: 600px) {
   .portfolio__item_id {
     width: 90%;
@@ -754,6 +755,5 @@ section#project-detail {
     padding: 0;
     font-size: medium;
   }
-
-
 }
+

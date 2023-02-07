@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -19,12 +20,12 @@ export default function Nav() {
   useEffect(function mount() {
     function scrollFunction() {
       // or page is on mobile view
-      if(window.innerWidth <= 768) {
+      if (window.innerWidth <= 768) {
         return;
-      } else  {
+      } else {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-         document.querySelector('.hamburger').style.display = 'block';
-         document.querySelector('.nav__list').classList.add('hamburger--scroll');      
+          document.querySelector('.hamburger').style.display = 'block';
+          document.querySelector('.nav__list').classList.add('hamburger--scroll');
         } else {
           document.querySelector('.hamburger').style.display = 'none';
           document.querySelector('.nav__list').classList.remove('hamburger--scroll');
@@ -37,19 +38,25 @@ export default function Nav() {
       window.addEventListener("scroll", scrollFunction);
     };
   });
+
+  const router = useRouter();
+  function clickLogo() {
+    router.push('/');
+  }
+
+
   return (
     <header >
       <nav className="navbar">
-        <div id="logo" className="logo">
-          <Link href="/">
-            <Image
-              src="/coco1.svg"
-              alt="logo"
-              width={100}
-              height={100}
-            />
-          </Link>
+        <div id="logo" className="logo" onClick={clickLogo}>
+          <Image
+            src="/coco1.svg"
+            alt="logo"
+            width={100}
+            height={100}
+          />
         </div>
+
 
         <h3 className='header_name' >Jane Liang</h3>
 
