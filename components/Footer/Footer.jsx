@@ -27,7 +27,7 @@ export default function Footer() {
             <div className='footer__socials'>
                 <Link href="https://linkedin.com/in/janiejane" target="blank"><BsLinkedin /></Link>
                 <Link href="https://github.com/Cocoandjane" target="blank"><BsGithub /></Link>
-                <Link href="mailto:janeliangbc@gmai.com" target="blank"><SiGmail /></Link>
+                <Link href="mailto:janeliangbc@gmail.com" target="blank"><SiGmail /></Link>
             </div>
 
         </div>
