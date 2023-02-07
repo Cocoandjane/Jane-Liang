@@ -30,24 +30,24 @@ export default function Contact() {
           <article className="contact__option">
             <AiOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
-            <h5>janeliangbc@gmail.com</h5>
+            {/* <h5>janeliangbc@gmail.com</h5> */}
             <Link href='mailto:janeliangbc@gmail.com' target="_blank"> Send a message</Link>
           </article>
 
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <BsWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>778-708-5905</h5>
             <Link href='https://api.whatsapp.com/send?phone=7787085905' target="_blank"> Send a message</Link>
-          </article>
+          </article> */}
 
         </div>
-        <form ref={formRef} onSubmit={sendEmail}>
+        {/* <form ref={formRef} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder='Your full name' required />
           <input type="email" name="email" placeholder="Your email" required />
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
           <button type="submit" className='btn btn-primary'>Send Message</button>
-        </form>
+        </form> */}
       </div>
 
     </section>
