@@ -242,7 +242,7 @@ li {
   gap: 60px;
 }
 
-
+/* hamburger and nav when scrolled down */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -274,9 +274,8 @@ li {
 }
 
 .nav__item {
-  margin: 16px 0;
+  margin: 2rem 0;
 }
-
 
 .nav__list.hamburger--scroll {
   border-radius: 1rem 0 0 1rem;
@@ -289,12 +288,11 @@ li {
   background-color: rgba(0, 0, 0, 0.6);
   width: 170px;
   text-align: center;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .nav__list.hamburger--scroll.active {
   right: 0;
 }
-
 
 @media(max-width: 768px) {
 
