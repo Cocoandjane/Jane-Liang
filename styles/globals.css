@@ -194,6 +194,7 @@ a:hover {
   display: flex;
   align-items: center;
   max-width: 3.5rem;
+  z-index: 1001;
 }
 
 .logo--img {
