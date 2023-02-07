@@ -111,7 +111,9 @@ strong {
 
 
 /* general styles */
-
+.space{
+  margin-top: 8rem;
+}
 body {
   color: var(--clr-dark);
   margin: 0;
@@ -200,6 +202,14 @@ a:hover {
 
 header {
   background-color: var(--clr-dar);
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; */
+}
+
+.header_name {
+  display: none;
 }
 
 .nav__link {
@@ -216,13 +226,13 @@ li {
   list-style: none;
 }
 
+
 .navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-
 }
 
 .nav__list {
@@ -231,6 +241,7 @@ li {
   align-items: center;
   gap: 60px;
 }
+
 
 .hamburger {
   display: none;
@@ -250,7 +261,52 @@ li {
   background-color: var(--clr-dark);
 }
 
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav__item {
+  margin: 16px 0;
+}
+
+
+.nav__list.hamburger--scroll {
+  border-radius: 1rem 0 0 1rem;
+  z-index: 1000;
+  position: fixed;
+  right: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 170px;
+  text-align: center;
+  transition: 0.3s;
+}
+.nav__list.hamburger--scroll.active {
+  right: 0;
+}
+
+
 @media(max-width: 768px) {
+
+  .header_name {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--clr-accent-dark);
+  }
   * {
     overflow-x: hidden;
   }

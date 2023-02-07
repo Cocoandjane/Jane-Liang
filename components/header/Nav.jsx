@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -16,50 +16,72 @@ export default function Nav() {
     menuToggle.classList.remove('active');
     navigation.classList.remove('active');
   }
+  useEffect(function mount() {
+    function scrollFunction() {
+      // or page is on mobile view
+      if(window.innerWidth <= 768) {
+        return;
+      } else  {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+         document.querySelector('.hamburger').style.display = 'block';
+         document.querySelector('.nav__list').classList.add('hamburger--scroll');      
+        } else {
+          document.querySelector('.hamburger').style.display = 'none';
+          document.querySelector('.nav__list').classList.remove('hamburger--scroll');
+        }
+      }
+    }
+    window.addEventListener("scroll", scrollFunction);
 
-
+    return function unMount() {
+      window.addEventListener("scroll", scrollFunction);
+    };
+  });
   return (
-    <header>
-    <nav className="navbar">
-      <div id="logo" className="logo">
-        <Link href="/">
-    <Image 
-      src="/coco1.svg"
-      alt="logo"
-      width={100}
-      height={100}
-    />
-    </Link>
-  </div>
-      <ul className="nav__list">
-        <li className="nav__item">
-          <Link href="/" className="nav__link">Home</Link>
-        </li>
+    <header >
+      <nav className="navbar">
+        <div id="logo" className="logo">
+          <Link href="/">
+            <Image
+              src="/coco1.svg"
+              alt="logo"
+              width={100}
+              height={100}
+            />
+          </Link>
+        </div>
 
-        <li className="nav__item" onClick={closeMenu}>
-          <Link href="/#about" className="nav__link">About</Link>
-        </li>
+        <h3 className='header_name' >Jane Liang</h3>
 
-        <li className="nav__item">
-          <Link href="/#skills" className="nav__link"  onClick={closeMenu}>Skills</Link>
-        </li>
+        <ul className="nav__list">
+          <li className="nav__item">
+            <Link href="/" className="nav__link" onClick={closeMenu}>Home</Link>
+          </li>
 
-        <li className="nav__item">
-          <Link href="/#projects" className="nav__link"  onClick={closeMenu}>Projects</Link>
-        </li>
+          <li className="nav__item" onClick={closeMenu}>
+            <Link href="/#about" className="nav__link">About</Link>
+          </li>
 
-        <li className="nav__item">
-          <Link href="/#contact" className="nav__link"  onClick={closeMenu}>Contact</Link>
-        </li>
+          <li className="nav__item">
+            <Link href="/#skills" className="nav__link" onClick={closeMenu}>Skills</Link>
+          </li>
 
-      </ul>
+          <li className="nav__item">
+            <Link href="/#projects" className="nav__link" onClick={closeMenu}>Projects</Link>
+          </li>
 
-      <div className="hamburger" onClick={toggleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
-    </nav>
-  </header>
+          <li className="nav__item">
+            <Link href="/#contact" className="nav__link" onClick={closeMenu}>Contact</Link>
+          </li>
+
+        </ul>
+
+        <div className="hamburger" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+      </nav>
+    </header>
   )
 }
