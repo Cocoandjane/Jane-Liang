@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
+import { SiGmail } from 'react-icons/si'
 import Link from 'next/link'
 export default function Footer() {
     return (
@@ -26,6 +27,7 @@ export default function Footer() {
             <div className='footer__socials'>
                 <Link href="https://linkedin.com/in/janiejane" target="blank"><BsLinkedin /></Link>
                 <Link href="https://github.com/Cocoandjane" target="blank"><BsGithub /></Link>
+                <Link href="mailto:janeliangbc@gmai.com" target="blank"><SiGmail /></Link>
             </div>
 
         </div>
