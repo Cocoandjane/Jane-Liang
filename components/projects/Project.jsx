@@ -19,7 +19,7 @@ export default function Project({ project }) {
                         className='project-image'
                         src={project.image} />
                     <div className="portfolio__item-cta">
-                        <Link href={project.github} ><AiOutlineGithub /></Link>
+                        <Link href={project.github} target="_blank"><AiOutlineGithub /></Link>
                         <Link href={project.live} target="_blank"><RiExternalLinkLine /></Link>
                     </div>
                 </div>
