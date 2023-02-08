@@ -26,7 +26,7 @@
             "title": "ChatMe",
             "image": "/project-imgs/chat.png",
             "github": "https://github.com",
-            "live": "https://github.com/Cocoandjane/chat-app-jane",
+            "live": "https://chat-app-jane.vercel.app/",
             "stack": ["Next Js", "Tailwind", "Firebase", "Firestore"],
             "tools": ["antd", "Axios", "AJAX", "Emoji JS"],
             "description":"A next.js based chatting app that uses tailwind for styling and Firebase for authentication and database management. Firestore is used to store images, and Emoji.js is used to enable the use of emojis in the chat. Users can easily search for new chats, open or close existing chats, and edit or delete their own messages."
