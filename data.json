@@ -23,7 +23,7 @@
           },
           {
             "id": 3,
-            "title": "ChatMe",
+            "title": "Chatting-app",
             "image": "/project-imgs/chat.png",
             "github": "https://github.com",
             "live": "https://chat-app-jane.vercel.app/",
@@ -33,7 +33,7 @@
           },
           {
             "id": 4,
-            "title": "Ecommerce",
+            "title": "E-commerce",
             "image": "/project-imgs/ecommerce.png",
             "github": "https://github.com/Cocoandjane/Ecommerce-prac",
             "live": "https://ecommerce-prac.vercel.app/",

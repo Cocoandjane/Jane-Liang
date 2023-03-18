@@ -87,11 +87,11 @@ export default function Nav() {
           </li>
 
           <li className="nav__item">
-            <Link href="/#skills" className="nav__link" onClick={closeMenu}>Skills</Link>
+            <Link href="/#projects" className="nav__link" onClick={closeMenu}>Projects</Link>
           </li>
 
           <li className="nav__item">
-            <Link href="/#projects" className="nav__link" onClick={closeMenu}>Projects</Link>
+            <Link href="/#skills" className="nav__link" onClick={closeMenu}>Skills</Link>
           </li>
 
           <li className="nav__item">
