@@ -11,8 +11,8 @@ export default function Home({projects}) {
     <Head/>
     <Header/>
     <About/>
-    <Services/>
     <Projects projects={projects}/>
+    <Services/>
     <Contact/>
     <Footer/>
     </>

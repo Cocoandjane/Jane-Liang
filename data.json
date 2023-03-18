@@ -15,7 +15,7 @@
             "title": "MoodJorts",
             "image": "/project-imgs/moodJorts.png",
             "github": "https://github.com/Cocoandjane/moodjorts",
-            "live": "https://moodjorts-jane.herokuapp.com/",
+            "live": "https://moodjorts.onrender.com",
             "stack": ["HTML/CSS"," Node.js", "Express", "LocalStorage"],
             "tools": ["DOM", "In Memory Array"],
             "description":"An image saving app with user-friendly features such as the ability to add, delete, resize, and rearrange images, as well as the option to undo and redo actions using DOM manipulation. The app uses an in-memory array to store actions for the undo and redo feature, providing a seamless user experience. All saved data is securely stored in local storage for easy access and retrieval."
@@ -53,9 +53,9 @@
           },
           {
             "id": 6,
-            "title": "Mimimul_API_Todo",
+            "title": "Mimimul-API-Todo",
             "image": "/project-imgs/minimalAPI.png",
-            "github": "https://github.com/Cocoandjane/minimalAPI-todo",
+            "github": "https://github.com/Cocoandjane/lambda-notes",
             "live": "https://best-todo.up.railway.app/",
             "stack": ["React", "Tailwind", "In-memmory Database", "Minimal API",  "ASP.NET"],
             "tools": ["Axios","Vite", "Code First", "Data migration", "AJAX", "Docker"],
@@ -71,6 +71,16 @@
             "stack":  ["React","Vite", "Tailwind", "PostgreSQL", "Minimal API", "Axios", "ASP.NET"],
             "tools": ["Axios","Vite", "Code First", "Data migration", "AJAX", "Docker"],
             "description": "A mood tracking app that allows you to keep track of your emotional well-being. The app uses ASP.NET to create a RESTful API and PostgreSQL to store the data. The app uses axios to make requests to the API and tailwind for styling. Front end is built with React and Vite."
+         },
+         {
+            "id":8,
+            "title": "Lamda-serverless-md-notes",
+            "image": "/project-imgs/lambda.png",
+            "github": "https://github.com/Cocoandjane/lambda-serverless",
+            "live": "https://lambda-md-notes.vercel.app/",
+            "stack": ["Next Js", "Tailwind", "Cockroach-DB", "AWS Lamda serverless API",  "ASP.NET", "c#"],
+            "tools": ["AWS Cognito auth", "Webapi", "Controllers", "fetch function", "Markdown.js", "AJAX", "Docker"],
+            "description": "Developed with AWS Lamda serverless API, ASP.NET, and C#. The app uses AWS Cognito for authentication and Cockroach-DB for database management. The app uses markdown.js to convert markdown to html and tailwind for styling. Front end is built with Next.js"
          }
       
          

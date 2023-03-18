@@ -48,7 +48,7 @@ export default function Project({ project }) {
                     })}
                 </div>
 
-                <h4>Detail :</h4>
+                <h4>Description :</h4>
                 <p>{project.description}</p>
             </div>
 

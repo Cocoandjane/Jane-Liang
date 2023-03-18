@@ -16,7 +16,9 @@ export default function Nav() {
     const navigation = document.querySelector('.nav__list');
     menuToggle.classList.remove('active');
     navigation.classList.remove('active');
-  }
+  } 
+  
+
   useEffect(function mount() {
     function scrollFunction() {
       if (window.innerWidth <= 768) {

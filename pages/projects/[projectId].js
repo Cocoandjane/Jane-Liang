@@ -24,6 +24,7 @@ export async function getStaticPaths() {
       { params: { projectId: '5' } },
       { params: { projectId: '6' } },
       { params: { projectId: '7' } },
+      { params: { projectId: '8' } },
     ],
     fallback: false
   }
