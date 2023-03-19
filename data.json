@@ -5,7 +5,7 @@
             "title": "vanMarket",
             "image": "/project-imgs/van.png",
             "github": "https://github.com/Cocoandjane/van_market_idsp",
-            "live": "https://vanmarket.herokuapp.com/",
+            "live": "https://van-market.onrender.com/",
             "stack": ["HTML/CSS"," Node.js", "Express", "MySQL"],
             "tools": ["Socket.io", "Git", "Heroku", "AWS/S3","AJAX", "Axios", "DOM"],
             "description": "A full stack web application that allows users to buy and sell items locally. Users can create an account, post items for sale, and chat with other users. Built with React, Node.js, Express, and MongoDB."
