@@ -1,12 +1,13 @@
 import React from 'react'
-import {Nav,SingleProject, Footer} from '../../components'
+import {Nav,Head, SingleProject, Footer} from '../../components'
 
 export default function Project( {project}) {
 
   return (
     <div>
-      <Nav/>
+      <Head/>
       <div className='id_header'>
+      <Nav/>
         <SingleProject project={project}/>
       </div>
       <Footer/>

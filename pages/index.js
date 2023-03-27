@@ -6,7 +6,7 @@ export default function Home({projects}) {
   return (
     <>
     <Nav/>
-    {/* <CTA/> */}
+    <CTA/>
     <div style={{marginTop:"3rem"}}></div>
     <Head/>
     <Header/>
