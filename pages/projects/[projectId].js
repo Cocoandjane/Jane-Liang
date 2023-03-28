@@ -4,14 +4,12 @@ import {Nav,Head, SingleProject, Footer} from '../../components'
 export default function Project( {project}) {
 
   return (
-    <div>
+    <>
       <Head/>
-      <div className='id_header'>
       <Nav/>
         <SingleProject project={project}/>
-      </div>
       <Footer/>
-    </div>
+    </>
   )
 }
 

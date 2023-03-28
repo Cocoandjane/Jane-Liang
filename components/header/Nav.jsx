@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
+import {RiCodeSSlashFill} from 'react-icons/ri'
 
 export default function Nav() {
   function toggleMenu() {
@@ -65,9 +66,11 @@ export default function Nav() {
   return (
     <header >
       <nav className="navbar">
-        <div id="logo" className="logo" onClick={clickLogo}>
+        <div id="logo" className="logo " onClick={clickLogo}>
+          {/* <RiCodeSSlashFill className='logo' style={{ color: '#00C98D', fontSize: '40px', fontWeight: 'bold' }}/>
+         <p className='my_name' style={{ fontWeight: 'bold', color: 'white' }}> JANE LIANG</p> */}
           <Image
-            src="/coco1.svg"
+            src="/coco.svg"
             alt="logo"
             width={100}
             height={100}
