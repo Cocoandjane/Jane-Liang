@@ -189,10 +189,15 @@ a:hover {
 }
 
 /* header */
+.comment {
+  font-size: large;
+  font-weight: 900;
+}
 
 .logo {
   display: flex;
   align-items: center;
+  /* gap: 0.5rem; */
   max-width: 3.5rem;
   z-index: 1001;
 }
