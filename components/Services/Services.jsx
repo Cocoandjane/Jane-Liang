@@ -4,7 +4,7 @@ import { BsFillPatchCheckFill } from 'react-icons/bs'
 export default function Services() {
 
   const frontEnd = ["HTML", "CSS", "Express.js", "JavaScript", "React.js", "Bootstrap", "Tailwind", "DOM", "AJAX", "Remix.js", "Next.js", "JSON", "Axios"]
-  const backEnd = ["Lamda", "Node.js", "MySQL", "CockroachDB", "MongoDB", "PostgreSQL", "Firebase", "C#", "PHP", "ASP.NET", "Pusher.js", "SignalR", "SwaggerAPI", "Prisma", "Socket.io", "Cognito", "Nextauth"]
+  const backEnd = ["Lambda", "Node.js", "MySQL", "CockroachDB", "MongoDB", "PostgreSQL", "Firebase", "C#", "PHP", "ASP.NET", "Pusher.js", "SignalR", "SwaggerAPI", "Prisma", "Socket.io", "Cognito", "Nextauth"]
 
   return (
     <section id="skills">
