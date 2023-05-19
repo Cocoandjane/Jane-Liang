@@ -18,7 +18,7 @@ export default function Header() {
       height={200}
       style={{ width: "100%", height: "auto"}}
       className="intro__img"
-      src="/me.jpeg"
+      src="/me2.jpeg"
       alt="a picture of Jane smiling"
     />
   </div>
