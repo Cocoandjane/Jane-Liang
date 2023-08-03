@@ -14,11 +14,11 @@ export default function Header() {
         Full-Stack Web Developer
     </p>
     <Image
-      width={200}
-      height={200}
-      style={{ width: "100%", height: "auto"}}
+      width={500}
+      height={500}
+      style={{ width: "100%", height: "auto", borderRadius: "5%"}}
       className="intro__img"
-      src="/me2.jpeg"
+      src="/me.jpeg"
       alt="a picture of Jane smiling"
     />
   </div>
